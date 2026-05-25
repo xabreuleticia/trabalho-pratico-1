@@ -2,112 +2,190 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delíciare</title>
+
+    <title>Sobremesas - Delíciare</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!--Cabeçario-->
-    <header> 
-        <div class="container">
-            <img src="logo.png" alt="Logotipo">
+<header>
+
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="d-flex align-items-center gap-2">
+
+            <img src="logo.png" class="logo" alt="Logotipo">
+
             <span class="Nome">DELÍCIARE</span>
-            <div class="caixa-de-pesquisa">
-                <input type="text" class="texto-pesquisa">
-                <button> ok</button>
-                 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
-            </div>
+
         </div>
-        <nav class="caixa-menuprincipal"> 
-            <ul>
-                <li><a href="index.html">Menu Principal</a></li>
-                <li><a href="almoco&jantar.html">Almoço & Jantar</a></li>
-                <li><a href="sobremesas.html">Sobremesas</a></li>
-                <li><a href="acompanhamentos.html">Acompanhamentos </a></li>
-                <li><a href="lanches.html"> Lanches</a></li>
-                <li><a href="compartilhe_sua_receita.html">Compartilhe sua receita</a></li>
-            </ul>
 
-        </nav>
+        <div class="d-flex caixa-de-pesquisa gap-2">
 
-    </header>
+            <input type="text" class="form-control" placeholder="Pesquisar...">
 
-    <!--Conteúdo do site -->
-    <div class="layout">
-        <main> 
-        <h1>Sobremesas</h1>
+            <button class="btn btn-light">OK</button>
 
-        </article>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg caixa-menuprincipal">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                ☰
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Menu Principal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="almoco&jantar.html">Almoço & Jantar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremesas.html">Sobremesas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="acompanhamentos.html">Acompanhamentos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lanches.html">Lanches</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<div class="container-fluid">
+
+    <div class="row g-0">
+
+        <main class="col-lg-9 col-12">
+
+            <h1 class="mb-4">Sobremesas</h1>
+
+            <div class="row" id="cards"></div>
+
         </main>
 
-        <!--Barra lateral-->
-        <aside> 
+        <aside class="col-lg-3 col-12">
 
             <div class="caixa-categoria">
+
                 <h5>Categorias</h5>
-                <legend for="tempo-de-preparo">Tempo de preparo:</legend>
 
-                <select name="tempo-de-preparo" id="tempo-de-preparo-escolha">
-                <option value="">Escolha um tempo de preparo</option>
-                <option value="rapido">Rápido (até 20 min)</option>
-                <option value="moderado">Moderado (20 a 45 min)</option>
-                <option value="demorado">Demorado (mais de 45 min)</option>
+                <label>Tempo de preparo:</label>
+
+                <select class="form-select mb-2">
+
+                    <option>Escolha um tempo</option>
+
+                    <option>Rápido</option>
+
+                    <option>Moderado</option>
+
+                    <option>Demorado</option>
+
                 </select>
 
-                <legend for="dificuldade">Nível de dificuldade:</legend>
+                <label>Dificuldade:</label>
 
-                <select name="dificuldade" id="dificuldade-escolha">
-                <option value="">Escolha o nível de dificuldade</option>
-                <option value="baixa">Baixa</option>
-                <option value="media">Média</option>
-                <option value="alta">Alta</option>
+                <select class="form-select mb-2">
+
+                    <option>Escolha</option>
+
+                    <option>Baixa</option>
+
+                    <option>Média</option>
+
+                    <option>Alta</option>
+
                 </select>
 
-                <legend for="proteina">Proteína:</legend>
-
-                <select name="proteina" id="proteina-escolha">
-                <option value="">Escolha uma proteína</option>
-                <option value="vegetariana">Vegetariana</option>
-                <option value="frango">Frango</option>
-                <option value="boi">Carne bovina</option>
-                <option value="porco">Carne suína</option>
-                <option value="frutos-do-mar">Peixa/frutos do mar</option>
-                <option value="misto">Mais de uma opção (misto)</option>
-                </select>
-                
-                <legend for="estilo">Estilo:</legend>
-
-                <select name="estilo" id="estilo-escolha">
-                <option value="">Escolha um estilo</option>
-                <option value="saudavel">Saúdavel</option>
-                <option value="fitness">Fitness</option>
-                <option value="low-carb">Low Carb</option>
-                <option value="vegana">Vegana</option>
-                <option value="sem-lactose">Sem lactose</option>
-                <option value="sem-gluten">Sem glúten</option>
-                </select>
-
-                <legend for="ocasiao">Ocasião:</legend>
-
-                <select name="ocasiao" id="ocasiao-escolha">
-                <option value="">Escolha uma ocasiao</option>
-                <option value="dia-a-dia">Dia a dia</option>
-                <option value="festa">Festa</option>
-                <option value="jantar-especial">Jantar especial/option>
-                <option value="datas-comemorativas">Datas comemorativas</option>
-                <option value="para-visitas">Para receber visitas</option>
-                </select>
             </div>
 
         </aside>
-    </div>
-    <footer>
-        <p class="rodape">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, explicabo.</p>
 
-    </footer>
+    </div>
+
+</div>
+
+<footer class="text-center p-3">
+
+    <p class="rodape">
+        © Delíciare - Todos os direitos reservados
+    </p>
+
+</footer>
+
+<script src="app.js"></script>
+
+<script>
+
+    const cards = document.getElementById("cards");
+
+    const sobremesas = receitas.filter(receita => 
+        receita.tipo == "sobremesa"
+    );
+
+    sobremesas.forEach(receita => {
+
+        cards.innerHTML += `
+
+        <div class="col-md-4 col-12 mb-4">
+
+            <a href="detalhes.html?id=${receita.id}" class="card-receita">
+
+                <article class="receita">
+
+                    <img 
+                        src="${receita.imagem}" 
+                        alt="${receita.nome}"
+                        class="img-receita"
+                    >
+
+                    <h4 class="subtitulo">
+                        ${receita.nome}
+                    </h4>
+
+                    <p class="Texto">
+                        Tempo: ${receita.tempo}
+                    </p>
+
+                </article>
+
+            </a>
+
+        </div>
+
+        `;
+    });
+
+</script>
+
 </body>
 </html>
