@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delíciare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="d-flex align-items-center gap-2">
+            <img src="logo.png" class="logo" alt="Logotipo">
+            <span class="Nome">DELÍCIARE</span>
+        </div>
+
+        <div class="d-flex caixa-de-pesquisa gap-2">
+            <input type="text" class="form-control" placeholder="Pesquisar...">
+            <button class="btn btn-light">OK</button>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg caixa-menuprincipal">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                ☰
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Menu Principal</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Almoço & Jantar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobremesas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acompanhamentos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lanches</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<div class="container-fluid mt-4">
+
+<div class="row g-0">
+
+        <main class="col-lg-9 col-12">
+
+            <h1 class="mb-4">Receitas</h1>
+
+            <div class="row" id="cards"></div>
+
+        </main>
+
+        <aside class="col-lg-3 col-12 mt-3 mt-lg-0">
+
+            <div class="caixa-categoria">
+
+                <h5>Categorias</h5>
+
+                <label>Tempo de preparo:</label>
+
+                <select class="form-select mb-2">
+                    <option>Escolha um tempo</option>
+                    <option>Rápido</option>
+                    <option>Moderado</option>
+                    <option>Demorado</option>
+                </select>
+
+                <label>Dificuldade:</label>
+
+                <select class="form-select mb-2">
+                    <option>Escolha</option>
+                    <option>Baixa</option>
+                    <option>Média</option>
+                    <option>Alta</option>
+                </select>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+<footer class="text-center p-3">
+    <p class="rodape">© Delíciare - Todos os direitos reservados</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
