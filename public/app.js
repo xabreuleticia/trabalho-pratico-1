@@ -708,7 +708,7 @@ if(cards){
         );
     }
 
-    else if(pagina.includes("almoco&jantar.html")){
+    else if(pagina.includes("almoco-jantar.html")){
 
         receitasFiltradas = receitas.filter(receita =>
             receita.tipo == "almoço e jantar"
