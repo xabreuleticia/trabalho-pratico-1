@@ -238,7 +238,7 @@ footer{
     color: #fff5e8;
     text-align: center;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 /* =========================
@@ -271,4 +271,38 @@ footer{
         border-left: none;
         border-top: 2px solid #dbc4ad;
     }
+}
+
+/* =========================
+   SOBRE A AUTORA
+========================= */
+
+.sobre-autora{
+    background-color: #f3e5d3;
+    padding: 50px 20px;
+    border-top: 2px solid #c8a98d;
+    
+}
+
+.caixa-autora{
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff8f0;
+    border: 2px solid #b88b6a;
+    border-radius: 25px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.caixa-autora h2{
+    font-family: "Spicy Rice", serif;
+    color: #7b4b3a;
+    margin-bottom: 20px;
+}
+
+.caixa-autora p{
+    color: #5e4636;
+    font-size: 1.05rem;
+    line-height: 1.8;
 }
