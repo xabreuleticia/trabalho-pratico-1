@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Receitas Enviadas - Delíciare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="d-flex align-items-center gap-2">
+
+            <img src="logo.png" class="logo" alt="Logotipo">
+
+            <span class="Nome">DELÍCIARE</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="container py-5">
+
+    <h1 class="mb-5">
+        Receitas Compartilhadas
+    </h1>
+
+    <div class="row" id="lista-receitas"></div>
+
+</main>
+
+<footer class="text-center p-3">
+
+    <p class="rodape">
+        © Delíciare - Todos os direitos reservados
+    </p>
+
+</footer>
+
+<script>
+
+const lista = document.getElementById("lista-receitas");
+
+const receitas = JSON.parse(localStorage.getItem("receitas")) || [];
+
+if(receitas.length === 0){
+
+    lista.innerHTML = `
+
+        <p class="text-center">
+            Nenhuma receita cadastrada ainda.
+        </p>
+
+    `;
+}
+
+else{
+
+    receitas.forEach(receita => {
+
+        lista.innerHTML += `
+
+        <div class="col-md-6 mb-4">
+
+            <div class="receita p-4">
+
+                <h3 class="subtitulo">
+                    ${receita.nome}
+                </h3>
+
+                <p>
+                    <strong>Email:</strong>
+                    ${receita.email}
+                </p>
+
+                <p>
+                    <strong>Receita:</strong>
+                </p>
+
+                <p>
+                    ${receita.receita}
+                </p>
+
+            </div>
+
+        </div>
+
+        `;
+    });
+
+}
+
+</script>
+
+</body>
+</html>

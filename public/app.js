@@ -199,3 +199,5 @@ fetch("receitas.json")
     console.log("Erro:", erro);
 
 });
+
+console.log(JSON.parse(localStorage.getItem("receitas")));
