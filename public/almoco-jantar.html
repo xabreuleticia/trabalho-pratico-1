@@ -56,7 +56,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="almoco&jantar.html">Almoço & Jantar</a>
+                        <a class="nav-link" href="almoco-jantar.html">Almoço & Jantar</a>
                     </li>
 
                     <li class="nav-item">
@@ -69,6 +69,10 @@
 
                     <li class="nav-item">
                         <a class="nav-link" href="lanches.html">Lanches</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="compartilhe_sua_receita.html">Compartilhe sua receita</a>
                     </li>
 
                 </ul>
@@ -203,48 +207,6 @@
 
 <script src="app.js"></script>
 
-<script>
-
-    const cards = document.getElementById("cards");
-
-    const almocoJantar = receitas.filter(receita => 
-        receita.tipo == "almoço e jantar"
-    );
-
-    almocoJantar.forEach(receita => {
-
-        cards.innerHTML += `
-
-        <div class="col-md-4 col-12 mb-4">
-
-            <a href="detalhes.html?id=${receita.id}" class="card-receita">
-
-                <article class="receita">
-
-                    <img 
-                        src="${receita.imagem}" 
-                        alt="${receita.nome}"
-                        class="img-receita"
-                    >
-
-                    <h4 class="subtitulo">
-                        ${receita.nome}
-                    </h4>
-
-                    <p class="Texto">
-                        Tempo: ${receita.tempo}
-                    </p>
-
-                </article>
-
-            </a>
-
-        </div>
-
-        `;
-    });
-
-</script>
 
 </body>
 </html>

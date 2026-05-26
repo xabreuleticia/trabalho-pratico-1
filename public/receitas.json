@@ -1,0 +1,586 @@
+[
+  {
+    "id": 1,
+    "nome": "Frango Grelhado com Arroz",
+    "imagem": "img/frango.png",
+    "receita": "Tempere o frango com alho, sal, limão e pimenta. Grelhe até dourar dos dois lados. Sirva com arroz branco.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "frango",
+    "estilo": "fitness",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 2,
+    "nome": "Lasanha de Carne",
+    "imagem": "img/lasanha.jpg",
+    "receita": "Monte camadas de massa, molho de carne, queijo e presunto. Leve ao forno por 40 minutos.",
+    "tempo": "demorado",
+    "dificuldade": "alta",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 3,
+    "nome": "Salmão Assado",
+    "imagem": "img/salmao.jpg",
+    "receita": "Tempere o salmão com limão, alho e ervas. Asse no forno por 30 minutos.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "frutos-do-mar",
+    "estilo": "fitness",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 4,
+    "nome": "Brownie Vegano",
+    "imagem": "img/brownie.png",
+    "receita": "Misture chocolate, farinha, açúcar mascavo e leite vegetal. Asse até ficar macio por dentro.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "vegetariana",
+    "estilo": "vegana",
+    "ocasiao": "festa",
+    "tipo": "sobremesas"
+  },
+
+  {
+    "id": 5,
+    "nome": "Hambúrguer Artesanal",
+    "imagem": "img/hamburguer.jpg",
+    "receita": "Modele a carne, grelhe e monte o hambúrguer com queijo, alface e tomate.",
+    "tempo": "moderado",
+    "dificuldade": "baixa",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "lanches"
+  },
+
+  {
+    "id": 6,
+    "nome": "Salada Vegana",
+    "imagem": "img/salada.jpg",
+    "receita": "Misture alface, tomate, cenoura, pepino e azeite. Sirva gelado.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "vegetariana",
+    "estilo": "vegana",
+    "ocasiao": "dia-a-dia",
+    "tipo": "acompanhamentos"
+  },
+
+  {
+    "id": 7,
+    "nome": "Torta de Frango",
+    "imagem": "img/torta-frango.png",
+    "receita": "Prepare a massa, recheie com frango desfiado temperado e asse até dourar.",
+    "tempo": "demorado",
+    "dificuldade": "media",
+    "proteina": "frango",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "lanches"
+  },
+
+  {
+    "id": 8,
+    "nome": "Purê de Batata",
+    "imagem": "img/pure.jpg",
+    "receita": "Cozinhe as batatas, amasse bem e misture com manteiga, leite e sal até ficar cremoso.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "vegetariana",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "acompanhamentos"
+  },
+
+  {
+    "id": 9,
+    "nome": "Moqueca de Peixe",
+    "imagem": "img/moqueca.jpg",
+    "receita": "Cozinhe o peixe com tomate, cebola, pimentão, leite de coco e azeite de dendê.",
+    "tempo": "demorado",
+    "dificuldade": "alta",
+    "proteina": "frutos-do-mar",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 10,
+    "nome": "Panqueca Fitness",
+    "imagem": "img/panqueca.jpg",
+    "receita": "Prepare a massa com ovos e aveia, recheie com frango desfiado e molho leve.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "frango",
+    "estilo": "fitness",
+    "ocasiao": "dia-a-dia",
+    "tipo": "lanches"
+  },
+
+  {
+    "id": 11,
+    "nome": "Bolo de Chocolate",
+    "imagem": "img/bolo.jpg",
+    "receita": "Misture os ingredientes da massa, asse até crescer e finalize com cobertura de brigadeiro.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "vegetariana",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "sobremesas"
+  },
+
+  {
+    "id": 12,
+    "nome": "Risoto de Carne",
+    "imagem": "img/risoto.jpg",
+    "receita": "Refogue a carne, adicione arroz arbóreo e caldo aos poucos até o risoto ficar cremoso.",
+    "tempo": "demorado",
+    "dificuldade": "alta",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 13,
+    "nome": "Macarrão ao Molho Branco",
+    "imagem": "img/macarrao.jpg",
+    "receita": "Cozinhe o macarrão e prepare um molho branco com leite, manteiga e queijo.",
+    "tempo": "moderado",
+    "dificuldade": "baixa",
+    "proteina": "vegetariana",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 14,
+    "nome": "Strogonoff de Frango",
+    "imagem": "img/strogonoff.jpg",
+    "receita": "Refogue o frango, adicione creme de leite e molho de tomate.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "frango",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 15,
+    "nome": "Escondidinho de Carne",
+    "imagem": "img/escondidinho.jpg",
+    "receita": "Faça um purê de batatas e cubra um recheio de carne moída.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 16,
+    "nome": "Pizza Caseira",
+    "imagem": "img/pizza.jpg",
+    "receita": "Prepare a massa, adicione molho, queijo e recheios.",
+    "tempo": "demorado",
+    "dificuldade": "media",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "lanches"
+  },
+
+  {
+    "id": 17,
+    "nome": "Cheesecake de Morango",
+    "imagem": "img/cheesecake.jpg",
+    "receita": "Prepare a base de biscoito, o creme de queijo e finalize com calda.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "vegetariana",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "sobremesas"
+  },
+
+  {
+    "id": 18,
+    "nome": "Wrap de Frango",
+    "imagem": "img/wrap.jpg",
+    "receita": "Recheie a massa com frango desfiado, alface e molho.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "frango",
+    "estilo": "fitness",
+    "ocasiao": "dia-a-dia",
+    "tipo": "lanches"
+  },
+
+  {
+    "id": 19,
+    "nome": "Arroz Carreteiro",
+    "imagem": "img/carreteiro.jpg",
+    "receita": "Refogue carne seca com alho e cebola, adicione arroz.",
+    "tempo": "moderado",
+    "dificuldade": "media",
+    "proteina": "boi",
+    "estilo": "normal",
+    "ocasiao": "dia-a-dia",
+    "tipo": "almoco-jantar"
+  },
+
+  {
+    "id": 20,
+    "nome": "Mousse de Maracujá",
+    "imagem": "img/mousse.jpg",
+    "receita": "Bata leite condensado, creme de leite e suco de maracujá.",
+    "tempo": "rapido",
+    "dificuldade": "baixa",
+    "proteina": "vegetariana",
+    "estilo": "normal",
+    "ocasiao": "festa",
+    "tipo": "sobremesas"
+  },
+
+  {
+  "id": 21,
+  "nome": "Omelete Fit",
+  "imagem": "img/omelete.jpg",
+  "receita": "Bata ovos com legumes picados e prepare na frigideira antiaderente.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "frango",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "lanches"
+},
+
+{
+  "id": 22,
+  "nome": "Nhoque ao Sugo",
+  "imagem": "img/nhoque.jpg",
+  "receita": "Cozinhe os nhoques e cubra com molho de tomate caseiro e queijo ralado.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 23,
+  "nome": "Cuscuz Nordestino",
+  "imagem": "img/cuscuz.jpg",
+  "receita": "Hidrate o flocão de milho e cozinhe no vapor. Sirva com manteiga ou ovos.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "dia-a-dia",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 24,
+  "nome": "Pudim de Leite",
+  "imagem": "img/pudim.jpg",
+  "receita": "Misture leite condensado, leite e ovos. Asse em banho-maria até firmar.",
+  "tempo": "demorado",
+  "dificuldade": "media",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 25,
+  "nome": "Frango Xadrez",
+  "imagem": "img/xadrez.jpg",
+  "receita": "Refogue frango com legumes e molho shoyu. Sirva com arroz branco.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "frango",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 26,
+  "nome": "Bruschetta Italiana",
+  "imagem": "img/bruschetta.jpg",
+  "receita": "Cubra fatias de pão com tomate, alho e manjericão. Leve ao forno rapidamente.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "vegana",
+  "ocasiao": "festa",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 27,
+  "nome": "Feijão Tropeiro",
+  "imagem": "img/tropeiro.jpg",
+  "receita": "Misture feijão, farinha, ovos, bacon e temperos. Refogue bem antes de servir.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "porco",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 28,
+  "nome": "Tapioca com Queijo",
+  "imagem": "img/tapioca.jpg",
+  "receita": "Espalhe a goma na frigideira, recheie com queijo e dobre ao meio.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "lanches"
+},
+
+{
+  "id": 29,
+  "nome": "Cupcake de Baunilha",
+  "imagem": "img/cupcake.jpg",
+  "receita": "Prepare a massa, asse em forminhas e finalize com cobertura doce.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 30,
+  "nome": "Yakisoba",
+  "imagem": "img/yakisoba.png",
+  "receita": "Refogue legumes e carne, misture macarrão e molho shoyu.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "boi",
+  "estilo": "normal",
+  "ocasiao": "dia-a-dia",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 31,
+  "nome": "Salpicão de Frango",
+  "imagem": "img/salpicao.jpg",
+  "receita": "Misture frango desfiado, legumes, maionese e batata palha.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "frango",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 32,
+  "nome": "Torta Holandesa",
+  "imagem": "img/torta.jpg",
+  "receita": "Monte camadas de creme e biscoito, finalize com cobertura de chocolate.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 33,
+  "nome": "Fricassê de Frango",
+  "imagem": "img/fricasse.jpeg",
+  "receita": "Misture frango desfiado com creme de milho, cubra com queijo e batata palha e leve ao forno.",
+  "tempo": "moderado",
+  "dificuldade": "media",
+  "proteina": "frango",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 34,
+  "nome": "Esfirra de Carne",
+  "imagem": "img/esfirra.jpg",
+  "receita": "Prepare a massa, recheie com carne temperada e asse até dourar.",
+  "tempo": "demorado",
+  "dificuldade": "media",
+  "proteina": "boi",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "lanches"
+},
+
+{
+  "id": 35,
+  "nome": "Muffin de Banana",
+  "imagem": "img/muffin.jpg",
+  "receita": "Misture banana amassada, farinha, ovos e açúcar. Asse em forminhas individuais.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 36,
+  "nome": "Filé de Tilápia Grelhado",
+  "imagem": "img/tilapia.jpg",
+  "receita": "Tempere a tilápia com limão e ervas. Grelhe até dourar dos dois lados.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "frutos-do-mar",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 37,
+  "nome": "Batata Rústica",
+  "imagem": "img/batata-rustica.jpg",
+  "receita": "Corte as batatas em gomos, tempere com ervas e asse até ficarem crocantes.",
+  "tempo": "moderado",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "vegana",
+  "ocasiao": "dia-a-dia",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 38,
+  "nome": "Empadão de Frango",
+  "imagem": "img/empadao.jpg",
+  "receita": "Prepare a massa amanteigada, recheie com frango cremoso e asse até dourar.",
+  "tempo": "demorado",
+  "dificuldade": "alta",
+  "proteina": "frango",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "lanches"
+},
+
+{
+  "id": 39,
+  "nome": "Sorvete Caseiro",
+  "imagem": "img/sorvete.jpg",
+  "receita": "Misture creme de leite, leite condensado e saborizante. Leve ao congelador.",
+  "tempo": "moderado",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 40,
+  "nome": "Arroz à Grega",
+  "imagem": "img/arroz-grega.jpg",
+  "receita": "Misture arroz cozido com legumes coloridos e uvas-passas.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 41,
+  "nome": "Crepioca Fit",
+  "imagem": "img/crepioca.jpg",
+  "receita": "Misture ovo e tapioca, recheie com queijo ou frango e prepare na frigideira.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "frango",
+  "estilo": "fitness",
+  "ocasiao": "dia-a-dia",
+  "tipo": "lanches"
+},
+
+{
+  "id": 42,
+  "nome": "Canjica Doce",
+  "imagem": "img/canjica.jpg",
+  "receita": "Cozinhe a canjica com leite, açúcar e canela até ficar cremosa.",
+  "tempo": "demorado",
+  "dificuldade": "media",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "sobremesas"
+},
+
+{
+  "id": 43,
+  "nome": "Bobó de Camarão",
+  "imagem": "img/bobo.jpg",
+  "receita": "Cozinhe camarões com mandioca cremosa, leite de coco e azeite de dendê.",
+  "tempo": "demorado",
+  "dificuldade": "alta",
+  "proteina": "frutos-do-mar",
+  "estilo": "normal",
+  "ocasiao": "festa",
+  "tipo": "almoco-jantar"
+},
+
+{
+  "id": 44,
+  "nome": "Farofa Completa",
+  "imagem": "img/farofa.jpg",
+  "receita": "Refogue farinha com bacon, ovos, cebola e temperos até dourar.",
+  "tempo": "rapido",
+  "dificuldade": "baixa",
+  "proteina": "porco",
+  "estilo": "normal",
+  "ocasiao": "dia-a-dia",
+  "tipo": "acompanhamentos"
+},
+
+{
+  "id": 45,
+  "nome": "Pão de Queijo",
+  "imagem": "img/pao-de-queijo.jpg",
+  "receita": "Misture polvilho, queijo, ovos e leite. Modele bolinhas e asse até crescer.",
+  "tempo": "moderado",
+  "dificuldade": "baixa",
+  "proteina": "vegetariana",
+  "estilo": "normal",
+  "ocasiao": "dia-a-dia",
+  "tipo": "lanches"
+}
+]
