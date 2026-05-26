@@ -8,11 +8,12 @@ fetch("receitas.json")
 
     if(cards){
 
-        let receitasFiltradas = [];
-
         const pagina = window.location.pathname.toLowerCase();
 
-        // ALMOÇO E JANTAR
+        let receitasFiltradas = receitas;
+
+        // FILTRO POR PÁGINA
+
         if(pagina.includes("almoco-jantar")){
 
             receitasFiltradas = receitas.filter(receita =>
@@ -20,7 +21,6 @@ fetch("receitas.json")
             );
         }
 
-        // SOBREMESAS
         else if(pagina.includes("sobremesas")){
 
             receitasFiltradas = receitas.filter(receita =>
@@ -28,7 +28,6 @@ fetch("receitas.json")
             );
         }
 
-        // LANCHES
         else if(pagina.includes("lanches")){
 
             receitasFiltradas = receitas.filter(receita =>
@@ -36,7 +35,6 @@ fetch("receitas.json")
             );
         }
 
-        // ACOMPANHAMENTOS
         else if(pagina.includes("acompanhamentos")){
 
             receitasFiltradas = receitas.filter(receita =>
@@ -44,48 +42,114 @@ fetch("receitas.json")
             );
         }
 
-        // INDEX
-        else{
+        // FUNÇÃO QUE MOSTRA AS RECEITAS
 
-            receitasFiltradas = receitas;
+        function mostrarReceitas(lista){
+
+            cards.innerHTML = "";
+
+            lista.forEach(receita => {
+
+                cards.innerHTML += `
+
+                <div class="col-md-4 col-12 mb-4">
+
+                    <a href="detalhes.html?id=${receita.id}" class="card-receita">
+
+                        <article class="receita">
+
+                            <img 
+                                src="${receita.imagem}" 
+                                alt="${receita.nome}"
+                                class="img-receita"
+                            >
+
+                            <h4 class="subtitulo">
+                                ${receita.nome}
+                            </h4>
+
+                            <p class="Texto">
+                                Tempo: ${receita.tempo}
+                            </p>
+
+                        </article>
+
+                    </a>
+
+                </div>
+                `;
+            });
         }
 
-        cards.innerHTML = "";
+        mostrarReceitas(receitasFiltradas);
 
-        receitasFiltradas.forEach(receita => {
+        // SELECTS
 
-            cards.innerHTML += `
+        const filtroTempo = document.getElementById("filtro-tempo");
+        const filtroDificuldade = document.getElementById("filtro-dificuldade");
+        const filtroProteina = document.getElementById("filtro-proteina");
+        const filtroEstilo = document.getElementById("filtro-estilo");
+        const filtroOcasiao = document.getElementById("filtro-ocasiao");
 
-            <div class="col-md-4 col-12 mb-4">
+        // FUNÇÃO DOS FILTROS
 
-                <a href="detalhes.html?id=${receita.id}" class="card-receita">
+        function aplicarFiltros(){
 
-                    <article class="receita">
+            let resultado = receitasFiltradas;
 
-                        <img 
-                            src="${receita.imagem}" 
-                            alt="${receita.nome}"
-                            class="img-receita"
-                        >
+            if(filtroTempo.value !== ""){
 
-                        <h4 class="subtitulo">
-                            ${receita.nome}
-                        </h4>
+                resultado = resultado.filter(receita =>
+                    receita.tempo === filtroTempo.value
+                );
+            }
 
-                        <p class="Texto">
-                            Tempo: ${receita.tempo}
-                        </p>
+            if(filtroDificuldade.value !== ""){
 
-                    </article>
+                resultado = resultado.filter(receita =>
+                    receita.dificuldade === filtroDificuldade.value
+                );
+            }
 
-                </a>
+            if(filtroProteina.value !== ""){
 
-            </div>
-            `;
-        });
+                resultado = resultado.filter(receita =>
+                    receita.proteina === filtroProteina.value
+                );
+            }
+
+            if(filtroEstilo.value !== ""){
+
+                resultado = resultado.filter(receita =>
+                    receita.estilo === filtroEstilo.value
+                );
+            }
+
+            if(filtroOcasiao.value !== ""){
+
+                resultado = resultado.filter(receita =>
+                    receita.ocasiao === filtroOcasiao.value
+                );
+            }
+
+            mostrarReceitas(resultado);
+        }
+
+        // EVENTOS
+
+        filtroTempo.addEventListener("change", aplicarFiltros);
+
+        filtroDificuldade.addEventListener("change", aplicarFiltros);
+
+        filtroProteina.addEventListener("change", aplicarFiltros);
+
+        filtroEstilo.addEventListener("change", aplicarFiltros);
+
+        filtroOcasiao.addEventListener("change", aplicarFiltros);
     }
 
     // DETALHES
+
     const detalhes = document.getElementById("detalhes");
 
     if(detalhes){
@@ -123,10 +187,6 @@ fetch("receitas.json")
 
                 <p><strong>Receita:</strong> ${receita.receita}</p>
 
-                <a href="index.html" class="btn btn-dark mt-3">
-                    Voltar
-                </a>
-
             </div>
             `;
         }
@@ -135,5 +195,7 @@ fetch("receitas.json")
 })
 
 .catch(erro => {
+
     console.log("Erro:", erro);
+
 });
