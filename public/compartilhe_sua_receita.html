@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Compartilhe sua Receita - Delíciare</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+
+        <div class="d-flex align-items-center gap-2">
+
+            <img src="logo.png" class="logo" alt="Logotipo">
+
+            <span class="Nome">DELÍCIARE</span>
+
+        </div>
+
+        <div class="d-flex caixa-de-pesquisa gap-2">
+
+            <input type="text" class="form-control" placeholder="Pesquisar...">
+
+            <button class="btn btn-light">OK</button>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg caixa-menuprincipal">
+
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                ☰
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Menu Principal
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="almoco-jantar.html">
+                            Almoço & Jantar
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobremesas.html">
+                            Sobremesas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="acompanhamentos.html">
+                            Acompanhamentos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lanches.html">
+                            Lanches
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="compartilhe_sua_receita.html">
+                            Compartilhe sua receita
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<div class="container-fluid">
+
+    <div class="row g-0">
+
+        <main class="col-lg-9 col-12 p-4">
+
+            <h1 class="mb-4">
+                Compartilhe sua Receita
+            </h1>
+
+            <div class="card p-4 shadow-sm">
+
+                <form id="form-receita">
+
+                    <div class="mb-3">
+
+                        <label for="nome" class="form-label">
+                            Nome
+                        </label>
+
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome"
+                            class="form-control"
+                            placeholder="Seu nome"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="email" class="form-label">
+                            E-mail
+                        </label>
+
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email"
+                            class="form-control"
+                            placeholder="seu@email.com"
+                            required
+                        >
+
+                    </div>
+
+                    <div class="mb-3">
+
+                        <label for="receita" class="form-label">
+                            Sua Receita
+                        </label>
+
+                        <textarea 
+                            id="receita"
+                            name="receita"
+                            class="form-control"
+                            rows="8"
+                            placeholder="Digite sua receita aqui..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-dark">
+                        Enviar Receita
+                    </button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <aside class="col-lg-3 col-12">
+
+    <div class="caixa-categoria p-3">
+
+        <h5>Categorias</h5>
+
+        <label>Tempo de preparo:</label>
+
+        <select class="form-select mb-2" id="filtro-tempo">
+
+            <option value="">Escolha um tempo</option>
+
+            <option value="rapido">Rápido</option>
+
+            <option value="moderado">Moderado</option>
+
+            <option value="demorado">Demorado</option>
+
+        </select>
+
+        <label>Dificuldade:</label>
+
+        <select class="form-select mb-2" id="filtro-dificuldade">
+
+            <option value="">Escolha</option>
+
+            <option value="baixa">Baixa</option>
+
+            <option value="media">Média</option>
+
+            <option value="alta">Alta</option>
+
+        </select>
+
+        <label>Proteína:</label>
+
+        <select class="form-select mb-2" id="filtro-proteina">
+
+            <option value="">Escolha uma proteína</option>
+
+            <option value="vegetariana">Vegetariana</option>
+
+            <option value="frango">Frango</option>
+
+            <option value="boi">Carne bovina</option>
+
+            <option value="porco">Carne suína</option>
+
+            <option value="frutos-do-mar">Peixe/frutos do mar</option>
+
+        </select>
+
+        <label>Estilo:</label>
+
+        <select class="form-select mb-2" id="filtro-estilo">
+
+            <option value="">Escolha um estilo</option>
+
+            <option value="normal">Normal</option>
+
+            <option value="fitness">Fitness</option>
+
+            <option value="vegana">Vegana</option>
+
+        </select>
+
+        <label>Ocasião:</label>
+
+        <select class="form-select mb-2" id="filtro-ocasiao">
+
+            <option value="">Escolha uma ocasião</option>
+
+            <option value="dia-a-dia">Dia a dia</option>
+
+            <option value="festa">Festa</option>
+
+            <option value="jantar-especial">Jantar especial</option>
+
+        </select>
+
+    </div>
+
+</aside>
+
+    </div>
+
+</div>
+
+<!-- SOBRE A ALUNA -->
+
+<section class="sobre-autora">
+
+    <div class="container">
+
+        <div class="caixa-autora">
+
+            <h2>Sobre a criadora</h2>
+
+            <p>
+                Site desenvolvido por <strong>Letícia Abreu</strong>
+                para o trabalho acadêmico da disciplina de Desenvolvimento de Interfaces Web.
+            </p>
+
+            <p>
+                O projeto “Delíciare” foi criado com HTML, CSS, JavaScript,
+                Bootstrap e integração com JSON para exibição dinâmica das receitas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="text-center p-3">
+
+    <p class="rodape">
+        © Delíciare - Todos os direitos reservados
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+const form = document.getElementById("form-receita");
+
+form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+
+    const email = document.getElementById("email").value;
+
+    const receita = document.getElementById("receita").value;
+
+    // cria objeto
+    const novaReceita = {
+        nome,
+        email,
+        receita
+    };
+
+    // pega receitas salvas
+    let receitasSalvas = JSON.parse(localStorage.getItem("receitas")) || [];
+
+    // adiciona nova
+    receitasSalvas.push(novaReceita);
+
+    // salva novamente
+    localStorage.setItem("receitas", JSON.stringify(receitasSalvas));
+
+    alert("Receita enviada com sucesso!");
+
+    form.reset();
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,29 +1,158 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Detalhes da Receita</title>
+    <title>Detalhes da Receita - Delíciare</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="container mt-5">
+    <!-- HEADER -->
 
-    <div id="detalhes"></div>
+    <header>
 
-</div>
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
 
+            <div class="d-flex align-items-center gap-2">
 
+                <img src="logo.png" class="logo" alt="Logotipo">
 
-<script src="app.js"></script>
+                <span class="Nome">DELÍCIARE</span>
 
-</body>
-</html>
+            </div>
+
+            <div class="d-flex caixa-de-pesquisa gap-2">
+
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+
+                <button class="btn btn-light">OK</button>
+
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg caixa-menuprincipal">
+
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    ☰
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu Principal</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="almoco-jantar.html">Almoço & Jantar</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremesas.html">Sobremesas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="acompanhamentos.html">Acompanhamentos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="lanches.html">Lanches</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="compartilhe_sua_receita.html">
+                                Compartilhe sua receita
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- DETALHES -->
+
+    <main class="container py-5">
+
+        <div id="detalhes"></div>
+
+    </main>
+
+    <!-- GALERIA -->
+
+    <section class="container mb-5">
+
+        <h2 class="titulo-galeria">Fotos Relacionadas</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="foto-galeria">
+
+                    <img src="img/foto1.jpg" class="img-fluid" alt="Foto da receita">
+
+                    <h5>Preparação da receita</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="foto-galeria">
+
+                    <img src="img/foto2.jpg" class="img-fluid" alt="Foto da receita">
+
+                    <h5>Ingredientes utilizados</h5>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="foto-galeria">
+
+                    <img src="img/foto3.jpg" class="img-fluid" alt="Foto da receita">
+
+                    <h5>Resultado final</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SOBRE A AUTORA -->
+
+    <section class="sobre-autora">
+
+        <div class="container">
+
+            <div class="caixa-autora">
+
+                <h2>
