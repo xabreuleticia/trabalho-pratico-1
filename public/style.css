@@ -1,182 +1,274 @@
-/* style.css */
+/* =========================
+   RESET
+========================= */
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body{
+    min-height: 100%;
+    background-color: #f5ede3;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-    background-color: #f7efe3;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+/* =========================
+   HEADER
+========================= */
 
-/* HEADER */
-
-header {
+header{
     background-color: #6b3e3e;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
-.logo {
-    height: 100px;
+.logo{
+    height: 90px;
     width: auto;
 }
 
-.Nome {
+.Nome{
     font-family: "Spicy Rice", serif;
     font-size: 2rem;
-    color: #f3d2a2;
+    color: #f7d9a8;
 }
 
-.caixa-de-pesquisa {
-    background-color: #6b3e3e;
+/* PESQUISA */
+
+.caixa-de-pesquisa{
     display: flex;
     gap: 10px;
 }
 
-.caixa-de-pesquisa input {
-    max-width: 200px;
+.caixa-de-pesquisa input{
+    max-width: 220px;
+    border-radius: 10px;
+    border: none;
 }
 
-.caixa-menuprincipal {
-    background-color: #9c6b5d;
-    border: 2px solid #6b3e3e;
+/* MENU */
+
+.caixa-menuprincipal{
+    background-color: #9b6a5c;
 }
 
-.nav-link {
-    text-decoration: none;
+.navbar-nav{
+    gap: 10px;
+}
+
+.nav-link{
     color: #fff5e8 !important;
-    background-color: #6b3e3e;
-    padding: 8px 15px;
-    border-radius: 20px;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 8px 14px !important;
     transition: 0.3s;
 }
 
-.nav-link:hover {
-    background-color: #3d2323;
+.nav-link:hover{
+    background-color: rgba(255,255,255,0.15);
 }
 
-/* CONTEÚDO */
+/* =========================
+   ESTRUTURA
+========================= */
 
-.container-fluid {
-    min-height: auto !important;
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
-.row {
-    align-items: stretch;
+main{
+    background-color: #f5ede3;
+    padding: 35px;
 }
 
-main {
-    background-color: #f7efe3;
-    padding: 0;
+.row{
+    margin: 0 !important;
 }
 
-/* CARD */
+/* =========================
+   CARROSSEL
+========================= */
 
-.card-receita {
+#carouselReceitas{
+    max-width: 760px;
+    margin: 0 auto 50px auto;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+}
+
+.imagem-carrossel{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    filter: brightness(0.92);
+}
+
+/* LEGENDA */
+
+.fundo-legenda{
+    background-color: rgba(0,0,0,0.55);
+    border-radius: 18px;
+    padding: 14px;
+}
+
+.fundo-legenda h3{
+    font-family: "Spicy Rice", serif;
+    color: #fff3df;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.fundo-legenda p{
+    color: white;
+    font-size: 0.95rem;
+}
+
+/* BOTÕES */
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: 12%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 50%;
+    padding: 18px;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h1,
+h5{
+    font-family: "Spicy Rice", serif;
+    color: #7b4f43;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 35px;
+    font-size: 3rem;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card-receita{
     text-decoration: none;
     color: inherit;
-    justify-content: center;
-    padding: 10px;
     display: block;
     height: 100%;
 }
 
-.receita {
-    background-color: #fff4e6;
-    border-radius: 20px;
-    border: 2px solid #9c6b5d;
-    text-align: center;
-    padding: 15px;
+.receita{
+    background-color: #fffaf4;
+    border-radius: 22px;
+    overflow: hidden;
     height: 100%;
     transition: 0.3s;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e2d3c3;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-.receita:hover {
-    transform: scale(1.03);
+.receita:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-/* IMAGENS */
-
-.img-receita {
+.img-receita{
     width: 100%;
-    height: 220px;
+    height: 230px;
     object-fit: cover;
-    border-radius: 15px;
 }
 
-/* TEXTOS */
-
-.subtitulo {
+.subtitulo{
     font-family: "Spicy Rice", serif;
     color: #8a584c;
-    margin-top: 15px;
+    margin-top: 18px;
+    text-align: center;
+    padding: 0 10px;
 }
 
-.Texto {
-    padding: 10px;
-}
-
-/* ASIDE */
-
-aside {
-    background-color: #fff4e6;
+.Texto{
     padding: 15px;
-    border-left: 2px solid #9c6b5d;
-    display: flex;
+    text-align: center;
+    color: #5e4a43;
 }
 
-.caixa-categoria {
+/* =========================
+   ASIDE
+========================= */
+
+aside{
+    background-color: #efe2d3;
+    padding: 25px;
+    border-left: 2px solid #dbc4ad;
+}
+
+.caixa-categoria{
     width: 100%;
-}
-
-/* TÍTULOS */
-
-h1 {
-    text-align: center;
-    font-family: "Spicy Rice", serif;
-    color: #8a584c;
-    margin-bottom: 20px;
-}
-
-h5 {
-    text-align: center;
-    font-family: "Spicy Rice", serif;
-    color: #8a584c;
-    margin-bottom: 10px;
 }
 
 /* SELECT */
 
-select {
+select{
     width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #6b3e3e;
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
     background-color: #6b3e3e;
     color: #fff5e8;
-}
-
-/* FOOTER */
-
-footer {
-    background-color: #fff4e6;
     text-align: center;
-    border-top: 2px solid #9c6b5d;
-    margin: 0;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-p {
-    margin-bottom: 0 !important;
-}
+/* =========================
+   RESPONSIVO
+========================= */
 
-.container-fluid {
-    padding: 0 !important;
-    margin: 0 !important;
+@media(max-width: 768px){
+
+    .Nome{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .imagem-carrossel{
+        height: 230px;
+    }
+
+    #carouselReceitas{
+        max-width: 100%;
+    }
+
+    aside{
+        border-left: none;
+        border-top: 2px solid #dbc4ad;
+    }
 }
